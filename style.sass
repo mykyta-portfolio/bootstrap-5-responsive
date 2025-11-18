@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;800;900&display=swap)
+@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap)
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;500;600;700&display=swap)
+
+@mixin button($width: 35px, $hight: 45%)
+  height: $hight
+  width: $width
+  outline: none
+  border: none
+  background: rgb(248, 26, 92)
+  color: white
+  font-weight: 700
+  border-radius: 60px
+  
+.a
+  font-family: 'Rubik', sans-serif
+  font-family: 'Lobster', display
+  font-family: 'Oswald', sans-serif
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.navbar-brand
+  font-size: 2rem
+  color: black
+  font-family: 'Lobster', display
+
+.navbar-brand:hover
+  color: black
+
+.nav-link
+  margin-inline: 10px
+  color: black
+  text-transform: uppercase
+  font-family: 'Rubik', sans-serif
+
+.nav-link:hover
+  color: black
+
+.search
+  height: 40px
+  width: 80%
+  border-radius: 60px
+  outline: none
+  border: 2px solid rgb(248, 26, 92)
+  margin-right: -35px
+  font-family: 'Rubik', sans-serif
+
+.btn0
+  height: 40px
+  width: 40%
+  outline: none
+  border: none
+  background: rgb(248, 26, 92)
+  color: white
+  font-weight: 700
+  border-radius: 60px
+
+.main
+  background: url(./jobimgs/spaghetti.jpg) no-repeat center / cover
+  height: 100vh
+  width: 100%
+
+.main h1 
+  font-size: 4rem
+  font-weight: 700
+  font-family: 'robot'
+  color: white
+  text-shadow: 2px 2px 10px #000
+
+.btn1 
+  @include button($width: 35%, $hight: 45px)
+
+.btn1:hover
+  background-color: rgb(220, 14, 80)
+  transition: 0.5s
+
+.fruits-img
+  width: 200px
+  height: 200px
+  object-fit: cover
+  border-radius: 50%
+  border: 6px dotted rgb(248, 26, 92)
+  border-left-color: transparent
+  border-top-color: transparent
+
+.fruit:nth-child(1) .fruits-img
+  border-right-color: transparent
+  border-top-color: transparent 
+
+.fruit:nth-child(2) .fruits-img
+  border-right-color: transparent
+  border-bottom-color: transparent 
+
+.fruit:nth-child(3) .fruits-img
+  border-left-color: transparent
+  border-bottom-color: transparent 
+  
+h1
+  font-weight: 700
+
+.card:hover
+  box-shadow: -6px -7px 56px 5px rgba(216,196,72,0.67)
+  -webkit-box-shadow: -6px -7px 56px 5px rgba(216,196,72,0.67)
+  -moz-box-shadow: -6px -7px 56px 5px rgba(216,196,72,0.67)
+  transition: 0.8s
+
+.apple
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./jobimgs/apple-girl.jpg)no-repeat
+    background-size: cover
+    height: 80vh
+    width: 100%
+
+.apple h1
+  font-family: 'Lobster', cursive
+
+.news
+  background-color: black
+  color: white
+
+.btn2
+  height: 45px
+  width: 100px
+  background: white
+  margin-left: -10px
+  border: 2px solid white
+  font-weight: 600
+
+.news input
+  height: 45px
+  width: 55%
+  border: 2px solid white
+  outline: none
+  background: black
+  color: white
+  margin-top: 20px
+  font-weight: 600
+
+.news::placeholder
+  color: white
+
+.news p
+  margin: 0
+
+.fab
+  font-size: 2.5rem
+  cursor: pointer
+  padding-right: 5px
+  
